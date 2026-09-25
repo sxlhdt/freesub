@@ -19,17 +19,18 @@ proxies:
       Host: aIs.SpEeDtEsT.nEt
 - name: 🇹🇭 TH 02 - xiaohe
   type: vless
-  server: 172.66.140.62
-  port: 8880
-  uuid: 160ca353-676d-4b7f-a041-0289e388b865
+  server: 104.16.10.185
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: v2ray.simspeedup.com
   network: ws
   ws-opts:
-    path: /
+    path: /ws
     headers:
-      Host: proud-cloud-7bdd.208-a52.workers.dev
+      Host: v2ray.simspeedup.com
 proxy-groups:
 - name: PROXIES
   type: select
