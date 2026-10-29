@@ -6,13 +6,13 @@ log-level: info
 proxies:
 - name: 🇮🇷 IR 01 - xiaohe
   type: vless
-  server: 212.80.9.157
-  port: 2087
-  uuid: 4f2351af-b628-4f99-6c4b-71000fd32388
+  server: req.apptrendv.com
+  port: 2083
+  uuid: 7cc18adc-1ef0-42c9-8e7b-722d7622c7dd
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: s5.zynetrax.ir
+  servername: email.apptrendv.com
 proxy-groups:
 - name: PROXIES
   type: select
