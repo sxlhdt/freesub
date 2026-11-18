@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaohe
+  type: vless
+  server: render.com
+  port: 443
+  uuid: 253d0ec6-6a98-4aaf-a22b-94ca72ef4d87
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sparkling-tree-fa79.xujfjcjjzjzjxjcha.workers.dev
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: sparkling-tree-fa79.xujfjcjjzjzjxjcha.workers.dev
+- name: 🇨🇿 CZ 02 - xiaohe
   type: ss
   server: 194.87.233.93
   port: 46190
@@ -17,11 +31,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 CZ 01 - xiaohe
+  - 🇨🇿 CZ 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 CZ 01 - xiaohe
+  - 🇨🇿 CZ 02 - xiaohe
 rules:
 - MATCH,PROXIES
